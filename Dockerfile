@@ -1,4 +1,4 @@
-# Dockerfile by JM
+# Dockerfile by JAMA
 FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 #FROM php:fpm-alpine
