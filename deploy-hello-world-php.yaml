@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: hello-world-php
+  name: hello-world-php
+
+  spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app: hello-world-php
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: hello-world-php
+            spec:
+      containers:
+      - image: hello-world-php
+        name: hello-world-php
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
