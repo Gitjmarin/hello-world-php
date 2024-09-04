@@ -1,4 +1,4 @@
-# Dockerfile by JAMARIN.
+# Dockerfile by JAMARIN 2024
 FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 #FROM php:fpm-alpine
